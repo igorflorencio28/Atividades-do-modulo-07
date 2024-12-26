@@ -1,0 +1,88 @@
+/*                                                                           Aula 07 - atividade 04
+                        
+    Crie uma página HTML e siga os passos abaixo:
+
+    Defina varíaveis Globais:
+    - Crie variáveis CSS paraarmazenar as cores principais do tema, como a cor de fundo, a cor de texto e a cor de destaque.
+    - Defina essas variáveis no seletor :root para que possam ser usadas em todo o documento.
+
+    Aplique as variáveis:
+    - Utilize as variáveis CSS para definir o fundo da página, a cor de texto de cabeçalhos e parágrafos, e a cor de destaque para links e botões.
+
+    Objetivo: Praticar a criação de variáveis CSS para definir e aplicar um esquema de cores temático a uma página web.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Creepster&family=Eater&family=Fjalla+One&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trocchi&display=swap');
+:root {
+    --cor-do-fundo-cabeçalho: rgba(0, 0, 255, 0.63);
+    --cor-links: rgba(255, 255, 0, 0.89);
+    --backgroud-color-body: rgba(0, 0, 0, 0.356);
+    --cor-da-logo: white;
+    ---tamanho-fonte: 20px;
+    --fonte: "Oswald", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  Cabeçalho  */
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    
+}
+
+
+.conteiner {
+    background-color: var(--backgroud-color-body);
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background-color: var(--cor-do-fundo-cabeçalho);
+}
+
+.logo h1 {
+    margin-left: 50px;
+    font-size: 2.7rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links a {
+    margin-right: 50px;
+    color: var(--cor-links);
+    text-decoration: none;
+    font-size: var(---tamanho-fonte);
+}
+
+/* Conteúdo principal */
+
+.conteiner-body {
+    background-color: var(--backgroud-color-body);
+    font-size: var(---tamanho-fonte);
+    font-family: var(--fonte);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 0px 20px 0px;
+    box-shadow:5px 5px 5px gray;
+    margin: 20px;
+}
+
+.conteiner-body .logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-body .corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
